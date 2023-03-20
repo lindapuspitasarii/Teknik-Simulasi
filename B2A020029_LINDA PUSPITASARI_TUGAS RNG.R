@@ -1,3 +1,5 @@
+# NAMA : LINDA PUSPITASARI
+# NIM  : B2A020029
 #TUGAS RNG
 #NIM GANJIL
 #-Menggunakan Additive
