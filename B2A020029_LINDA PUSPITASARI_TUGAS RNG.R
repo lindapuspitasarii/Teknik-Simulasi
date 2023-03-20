@@ -34,3 +34,9 @@ Bernouli_2<-function(n,p) {
 }
 barplot(tabel,main="Bernoulli")
 Bernouli_2(1000, 0.65)
+Bernouli_2(107, 0.65)
+Bernouli_2(42, 0.65)
+Bernouli_2(113, 0.65)
+Bernouli_2(114, 0.65)
+#Dst ke-Xi n=urut ke 100
+#Hasil subtitusi ada di file pdf submitan dibawah
