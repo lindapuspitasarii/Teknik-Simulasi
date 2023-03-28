@@ -1,0 +1,36 @@
+#KELOMPOK 4
+#1. Muhamad Arif Hidayat B2A020015
+#2. Linda Puspitasari B2A020029
+#3. Quinsy Pranandira Rilvandri B2A020042
+
+#ADDITIVE
+Additive_RNG<-function(a,z0,c,m,n) {
+  xi<-matrix(NA,n,3)
+  colnames(xi)<-c("aZ(i-1)+c","Xi","Ui")
+  for (i in 1:n)
+  {
+    xi[i,1]<-(a*z0+c)
+    xi[i,2]<-xi[i,1]%%m
+    xi[i,3]<-xi[i,2]/m
+    z0<-xi[i,2]
+  }
+  hist(xi[,3])
+  View(xi)
+  lambda<-1
+  K<-NULL
+  for (z in 1:i){
+    k<-0
+    sk<-1
+    while(sk>=exp(-lambda)){
+      u<-xi[,3]
+      sk<-sk*u
+      k<-k+1
+    }
+    K[z]<-k
+  }
+  K
+  (tabel1<-table(K)/length(K))
+  hist(K)
+  print(K)
+}
+Additive_RNG(45,21139,437,417,150)
