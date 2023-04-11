@@ -20,4 +20,4 @@ mcA
 mcA^2
 steadyStates(mcA)
 absorbingStates(mcA)
-markovchainSequence(n=20, markovchain=mcC, include=TRUE)
+markovchainSequence(n=20, markovchain=mcA, include=TRUE)
